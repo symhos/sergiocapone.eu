@@ -6,3 +6,18 @@
 html {
     font-family: sans-serif;
 }
+
+p {
+    font-family: serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: normal;
+}
