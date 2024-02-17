@@ -1,0 +1,39 @@
+.bg-gray-1 {
+    background-color: rgb(204, 204, 204);
+}
+
+.bg-gray-2 {
+    background-color: rgb(192, 192, 192);
+}
+
+.bg-gray-3 {
+    background-color: rgb(153, 153, 153);
+}
+
+.bg-green-1 {
+    background-color: rgb(153, 255, 153);
+}
+
+.bg-green-2 {
+    background-color: rgb(102, 255, 153);
+}
+
+.second-col {
+    width: 400px;
+}
+
+.third-col {
+    width: 518px;
+}
+
+main, footer {
+    padding: 40px;
+}
+
+td {
+    padding: 5px;
+}
+
+.v-align-top {
+    vertical-align: top;
+}
