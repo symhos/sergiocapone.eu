@@ -1,0 +1,50 @@
+/* uguali a personali.css */
+
+.bg-gray-1 {
+    background-color: rgb(204, 204, 204);
+}
+
+.bg-gray-2 {
+    background-color: rgb(192, 192, 192);
+}
+
+.bg-gray-3 {
+    background-color: rgb(153, 153, 153);
+}
+
+.second-col {
+    width: 400px;
+}
+
+.third-col {
+    width: 518px;
+}
+
+main,
+footer {
+    padding: 40px;
+}
+
+td {
+    padding: 5px;
+}
+
+.v-align-top {
+    vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+}
+
+/* collettive.css */
+
+.bg-lightblue-1 {
+    background-color: rgb(204, 255, 254);
+}
+
+.bg-lightblue-2 {
+    background-color: rgb(103, 255, 255);
+}
