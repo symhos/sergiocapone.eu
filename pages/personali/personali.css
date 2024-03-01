@@ -26,6 +26,10 @@
     width: 518px;
 }
 
+.fourth-col {
+    width: 246px;
+}
+
 main, footer {
     padding: 40px;
 }
