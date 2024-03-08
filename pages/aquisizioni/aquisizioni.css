@@ -41,10 +41,10 @@ td {
 
 /* acquisizioni.css */
 
-.bg-purple-1 {
-    background-color: rgb(204, 204, 255);
+.bg-red-1 {
+    background-color: rgb(255, 204, 204);
 }
 
-.bg-purple-2 {
-    background-color: rgb(153, 153, 255);
+.bg-red-2 {
+    background-color: rgb(255, 102, 101);
 }
