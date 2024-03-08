@@ -12,12 +12,20 @@
     background-color: rgb(153, 153, 153);
 }
 
+.first-col {
+    width: 146px;
+}
+
 .second-col {
     width: 400px;
 }
 
 .third-col {
     width: 518px;
+}
+
+.fourth-col {
+    width: 246px;
 }
 
 main,
