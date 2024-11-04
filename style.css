@@ -76,3 +76,13 @@
 .text-center {
     text-align: center;
 }
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 40px;
+}
+
+footer {
+    padding: 40px;
+}
