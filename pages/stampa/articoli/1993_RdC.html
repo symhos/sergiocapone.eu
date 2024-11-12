@@ -10,17 +10,22 @@
     <link rel="stylesheet" href="./articoli.css">
 </head>
 
-<body bgcolor="#C0C0C0">
+<body>
     <!-- Include header component -->
     <div id="header-container"></div>
 
     <main>
         <table border="0" cellpadding="2" width="100%">
             <tr>
-                <td width="84%"><i>Intervista realizzata dalla giornalista Anna Pedrini per il quotidiano <b>il
-                            Resto del Carlino</b>.</i> <br>
-                    <i>Quello che segue è il testo integrale dell'intervista realizzata e discussa nel mese di luglio
-                        del 1993.</i>
+                <td width="84%">
+                    <blockquote>
+                        <p>
+                            <i>Intervista realizzata dalla giornalista Anna Pedrini per il quotidiano <b>il
+                                    Resto del Carlino</b>.</i> <br>
+                            <i>Quello che segue è il testo integrale dell'intervista realizzata e discussa nel mese di
+                                luglio
+                                del 1993.</i>
+                        </p>
                 </td>
             </tr>
         </table>
@@ -28,7 +33,8 @@
         <blockquote>
             <p align="center">
                 <font size="5"><strong>Da Piazza Garibaldi si vede il Duomo! <br>
-                    </strong><i>L'amore-odio di un artista difficile per la sua città adottiva.</i> </font>
+                    </strong><i>L'amore-odio di un artista difficile per la sua città adottiva.</i>
+                </font>
             </p>
         </blockquote>
 
@@ -164,23 +170,22 @@
         </p>
         <p><br>
             <b><i>si ringraziano della cortesia: Anna Pedrini e Il Resto del Carlino (edizione di Modena)</i></b>
-        <p>&nbsp;</p>
+        </p>
+    </main>
+    <hr>
+    <!-- Include footer component -->
+    <div id="footer-container"></div>
 
-        <hr>
-
-        <!-- Include footer component -->
-        <div id="footer-container"></div>
-
-        <script src="../../../scripts.js"></script>
-        <script>
-            // Load header and footer components
-            document.addEventListener('DOMContentLoaded', function() {
-                loadHTML('../../../components/header.html', 'header-container', function() {
-                    document.querySelector('#header-container a').href = "/pages/stampa/stampa.html";
-                });
-                loadHTML('../../../components/footer.html', 'footer-container');
+    <script src="../../../scripts.js"></script>
+    <script>
+        // Load header and footer components
+        document.addEventListener('DOMContentLoaded', function () {
+            loadHTML('../../../components/header.html', 'header-container', function () {
+                document.querySelector('#header-container a').href = "/pages/stampa/stampa.html";
             });
-        </script>
+            loadHTML('../../../components/footer.html', 'footer-container');
+        });
+    </script>
 </body>
 
 </html>
