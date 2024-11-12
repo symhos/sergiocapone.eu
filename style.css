@@ -1,3 +1,78 @@
+/* Palette */
+:root {
+    --gray-1: rgb(204, 204, 204);
+    --gray-2: rgb(192, 192, 192);
+    --gray-3: rgb(153, 153, 153);
+
+}
+
+.bg-gray-1 {
+    background-color: var(--gray-1);
+}
+
+.bg-gray-2 {
+    background-color: var(--gray-2);
+}
+
+.bg-gray-3 {
+    background-color: var(--gray-3);
+}
+
+/* Typography */
+.text-center {
+    text-align: center;
+}
+
+/* Global */
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 40px;
+}
+
+footer {
+    padding: 40px;
+}
+
+/* Table */
+td {
+    padding: 5px;
+}
+
+.first-col {
+    width: 146px;
+}
+
+.second-col {
+    width: 400px;
+}
+
+.third-col {
+    width: 518px;
+}
+
+.fourth-col {
+    width: 246px;
+}
+
+.v-align-top {
+    vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+}
+
+/* Index */
 .main-container {
     margin: 0 auto;
     width: 100%;
@@ -44,7 +119,6 @@
     text-align: center;
 }
 
-
 .nav-container a {
     font-style: italic;
 }
@@ -71,18 +145,4 @@
 
 .border-bottom-dark-green {
     border-bottom: 2px solid #33CC03;
-}
-
-.text-center {
-    text-align: center;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 16px 40px;
-}
-
-footer {
-    padding: 40px;
 }
