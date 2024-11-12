@@ -4,5 +4,8 @@ deployment:
     - export DEPLOYPATH=/home/capone/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp style-reset.css $DEPLOYPATH
+    - /bin/cp scripts.js $DEPLOYPATH
     - /bin/cp -r img $DEPLOYPATH
     - /bin/cp -r pages $DEPLOYPATH
+    - /bin/cp -r components $DEPLOYPATH
