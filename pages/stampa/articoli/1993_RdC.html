@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergio Capone - Intervista del luglio 1993</title>
     <link rel="stylesheet" href="../../../style-reset.css">
+    <link rel="stylesheet" href="../../../style.css">
     <link rel="stylesheet" href="./articoli.css">
 </head>
 
 <body bgcolor="#C0C0C0">
-    <header>
-        <a href="/pages/stampa/stampa.html">
-            <img src="../../../img/capone_small.gif" alt="torna alla pagina della stampa" height="82" width="80">
-        </a>
-    </header>
+    <!-- Include header component -->
+    <div id="header-container"></div>
 
     <main>
         <table border="0" cellpadding="2" width="100%">
@@ -170,9 +168,19 @@
 
         <hr>
 
-        <p align="center">
-            <font size="1"><b>® Fabbrica Italiana d'Arte 1995.2005</b></font>
-        </p>
+        <!-- Include footer component -->
+        <div id="footer-container"></div>
+
+        <script src="../../../scripts.js"></script>
+        <script>
+            // Load header and footer components
+            document.addEventListener('DOMContentLoaded', function() {
+                loadHTML('../../../components/header.html', 'header-container', function() {
+                    document.querySelector('#header-container a').href = "/pages/stampa/stampa.html";
+                });
+                loadHTML('../../../components/footer.html', 'footer-container');
+            });
+        </script>
 </body>
 
 </html>
