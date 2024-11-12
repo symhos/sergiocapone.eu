@@ -11,15 +11,12 @@
 </head>
 
 <body>
-    <header>
-        <a href="/">
-            <img src="../../img/capone_small.gif" alt="torna alla pagina iniziale" height="82" width="80">
-        </a>
-    </header>
+    <!-- Include header component -->
+    <div id="header-container"></div>
 
     <main>
         <div class="grid-container">
-            <div class="bg-gray">
+            <div class="bg-gray-1">
                 <h2>Giovane Europa</h2>
                 <h3>(azioni, installazioni e videoinstallazioni)</h3>
             </div>
@@ -61,7 +58,7 @@
 
         </div>
         <div class="grid-container">
-            <div class="bg-gray">
+            <div class="bg-gray-1">
                 <div class="pb-10">
                     <h2>Amor di patria</h2>
                     <h3>(azioni, installazioni e videoinstallazioni)</h3>
@@ -120,7 +117,7 @@
 
         </div>
         <div class="grid-container">
-            <div class="bg-gray">
+            <div class="bg-gray-1">
                 <div class="pb-10">
                     <h2>Comunicazione e media</h2>
                     <h3>(azioni, installazioni e videoinstallazioni)</h3>
@@ -162,7 +159,7 @@
 
         </div>
         <div class="grid-container">
-            <div class="bg-gray">
+            <div class="bg-gray-1">
                 <h2>WebArt</h2>
             </div>
             <div class="flex-col">
@@ -183,7 +180,7 @@
 
         </div>
         <div class="grid-container">
-            <div class="bg-gray">
+            <div class="bg-gray-1">
                 <h2>Altro</h2>
             </div>
             <div class="flex-col">
@@ -227,7 +224,7 @@
 
         </div>
         <!-- <div class="grid-container">
-            <div class="bg-gray">
+            <div class="bg-gray-1">
                 <h2>Retroguardia.</h2>
             </div>
             <div class="flex-col">
@@ -243,12 +240,19 @@
 
     <hr>
 
-    <footer>
-        <h6 class="text-center">
-            <strong>&reg; Fabbrica Italiana d'Arte 1995.2005</strong>
-        </h6>
-    </footer>
+    <!-- Include footer component -->
+    <div id="footer-container"></div>
 
+    <script src="../../scripts.js"></script>
+    <script>
+        // Load header and footer components
+        document.addEventListener('DOMContentLoaded', function() {
+            loadHTML('../../components/header.html', 'header-container', function() {
+                document.querySelector('#header-container a').href = "/";
+            });
+            loadHTML('../../components/footer.html', 'footer-container');
+        });
+    </script>
 </body>
 
 </html>

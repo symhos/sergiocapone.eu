@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <!-- Include header component -->
+    <div id="header-container"></div>
+
     <main>
         <div class="table-container">
             <table width="100%">
@@ -29,11 +32,7 @@
                             </strong>
                         </td>
                         <td class="bg-gray-1 third-col"></td>
-                        <td class="fourth-col">
-                            <a href="/">
-                                <img src="../../img/capone_small.gif" alt="torna alla pagina iniziale">
-                            </a>
-                        </td>
+                        <td class="bg-gray-3 fourth-col"></td>
                     </tr>
                 </thead>
                 <tbody class="v-align-top">
@@ -930,13 +929,19 @@
 
     <hr>
 
+    <!-- Include footer component -->
+    <div id="footer-container"></div>
 
-    <footer>
-        <h6 class="text-center">
-            <strong>&reg; Fabbrica Italiana d'Arte 1995.2005</strong>
-        </h6>
-    </footer>
-
+    <script src="../../scripts.js"></script>
+    <script>
+        // Load header and footer components
+        document.addEventListener('DOMContentLoaded', function() {
+            loadHTML('../../components/header.html', 'header-container', function() {
+                document.querySelector('#header-container a').href = "/";
+            });
+            loadHTML('../../components/footer.html', 'footer-container');
+        });
+    </script>
 </body>
 
 </html>

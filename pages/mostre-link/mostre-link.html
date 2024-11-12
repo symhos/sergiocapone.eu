@@ -4,11 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergio Capone</title>
+    <title> Sergio Capone </title>
+    <link rel="stylesheet" href="../../style-reset.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="mostre-link.css">
 </head>
 
 <body>
-    <h1>Progetti</h1>
+    <!-- Include header component -->
+    <div id="header-container"></div>
+
+    <main>
+        <div class="table-container">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td class="bg-gray-3 first-col"></td>
+                        <td class="bg-gray-2">
+                            <strong>
+                                Austellungen ver&ouml;ffentlichten
+                                <br>
+                                Expositions publiés
+                                <br>
+                                Exhibitions published
+                                <br>
+                                Mostre pubblicate
+                            </strong>
+                        </td>
+                        <td class="bg-gray-3 fourth-col"></td>
+                    </tr>
+                </thead>
+                <tbody class="v-align-top">
+                    <tr>
+                        <td class="bg-pink-2">
+                            <strong> 2000 </strong>
+                        </td>
+                        <td>
+                            <strong>Tuchf&uuml;hlung 2 - ITALIA</strong>
+                            <br>
+                            Palazzo Ducale.
+                            <br>
+                            Genova, Italia.	
+                        </td>
+                        <td class="bg-pink-2"></td>
+                    </tr>
+                    <tr>
+                        <td class="bg-pink-1">
+                            <strong> 1996 </strong>
+                        </td>
+                        <td>
+                            <strong>Presente/Gegenwart - Anni Novanta</strong>
+                            <br>
+                            Kunstlerwerkstatt
+                            <br>
+                            Munchen, Germania.
+                        </td>
+                        <td class="bg-pink-1"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <hr>
+
+    <!-- Include footer component -->
+    <div id="footer-container"></div>
+
+    <script src="../../scripts.js"></script>
+    <script>
+        // Load header and footer components
+        document.addEventListener('DOMContentLoaded', function() {
+            loadHTML('../../components/header.html', 'header-container', function() {
+                document.querySelector('#header-container a').href = "/";
+            });
+            loadHTML('../../components/footer.html', 'footer-container');
+        });
+    </script>
 </body>
 
 </html>
